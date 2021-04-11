@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "@cucumber/cucumber": "^7.1.0",
-    "cypress": "^7.0.1"
+    "cypress": "^7.0.1",
+    "cypress-cucumber-preprocessor": "^4.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,8 @@
     "url": "smartbox-test"
   },
   "author": "Keith Carroll",
-  "license": "ISC"
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
 }
